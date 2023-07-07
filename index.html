@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+<body>
+    <div id="card" class="card">
+        <h1 id="cardTitle"></h1>
+        <p id="cardDescription"></p>
+    </div>
+    <div id="floatingBtns">
+        <button id="listCards" class="floating-btn">
+            <i class="fas fa-list"></i>
+        </button>
+        <button id="addCard" class="floating-btn">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>    
+    <div id="cardModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="cardList"></div>
+        </div>
+    </div>
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Adicionar Carta</h2>
+            <div class="form-group">
+                <label for="cardTitle">Título:</label>
+                <input type="text" id="cardTitleAdd" />
+            </div>
+            <div class="form-group">
+                <label for="cardDescription">Descrição:</label>
+                <textarea id="cardDescriptionAdd"></textarea>
+            </div>
+            <button id="saveCard" class="btn">Salvar</button>
+        </div>
+    </div>
+    <p id="endMessage" style="display: none;">O jogo acabou!</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
