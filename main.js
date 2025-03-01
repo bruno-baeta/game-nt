@@ -31,7 +31,7 @@ function shuffle(array) {
 
 // obtém os dados da API
 async function fetchCards() {
-    let response = await fetch('https://tame-erin-lovebird-hose.cyclic.app/game'); // substitua 'URL_DA_API' pelo endpoint da API real
+    let response = await fetch('https://backend-nostravamus.vercel.app/game'); // substitua 'URL_DA_API' pelo endpoint da API real
     cards = await response.json();
     shuffle(cards); // embaralha as cartas
     displayCard(); // exibe o primeiro cartão
